@@ -1,0 +1,169 @@
+/*colour scheme
+BB2D04 dark red
+EAAB34 goldenrod - yellow
+3D5518 Dark Olive Green
+7A7120 Olive Drab
+808B2A Peru - light green
+EAAB3499 - light yellow nav bg
+*/
+
+/*fonts
+Signika - title
+Cuprum - title
+Monospace - p + text
+*/
+
+/*background image size
+1920 x 1080
+*/
+
+html body {
+  height: 100%;
+  width: 100%;
+}
+.row.justify-content-center.align-items-center {
+  height: 100%;
+  min-height: 100%;
+}
+#main-page {
+	background-image: url('img/kum_2.jpg');
+  	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	height: 100vh;
+}
+.navbar {
+	background-color: #EAAB3499; /* translucent yellow */	
+}
+.nav-link {
+	color: black; 
+	float: right !important;
+	font-family: Signika;
+	font-size: 24px;
+}
+.nav-link:hover {
+    color: #3D5518; /*dark olive*/
+}
+.my-links {
+	color: #BB2D04; /*dark red*/
+}
+.my-links:hover {
+    color: #3D5518; /*dark olive*/
+}
+.fas {
+	color: #3D5518; /*dark olive*/
+}
+.col-sm-12 {
+	background-color: #eddbdbb3; /* white stip */
+}
+.textbox-one {
+	padding-right: 2rem; 
+	padding-left: 2rem;
+	padding-top: 0.5rem;
+}
+.my-h1 {
+	font-family: Signika;
+	color: #BB2D04; /*dark red*/
+	font-size: 4rem;
+}
+.my-h4 {
+	font-size: 1.8rem;
+	color: #3D5518; /*dark green*/
+	font-family: "Ubuntu";
+}
+.button-container {
+	padding-bottom: 1.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 2rem;
+}
+#page-divider {
+	background-color: #EAAB34; /* golden yellow */
+}
+#content-boxes {
+	padding-right: 5rem;
+	padding-left: 5rem;
+	padding-top: 2rem;
+}
+.my-h2 {
+	color: #3D5518; /*olive green*/
+	text-align: center;
+	padding-top: 3%;
+	font-family: Cuprum;
+	padding-bottom:3%;
+	font-size: 4rem;
+}
+.btn-my-color {
+	background-color: #BB2D04; /*dark red*/
+	color: white;
+	outline-color: #BB2D04; /*dark red*/
+	margin-left: 4px;
+	margin-right: 4px; 
+}
+.btn-my-color:hover {
+	background-color: white;
+	color: #BB2D04; /*dark red*/
+}
+.colored-card {
+	background-color: #3D5518; /*olive green*/
+	color: white;
+}
+.my-links-white {
+	color: white;
+	font-family: "Ubuntu";
+}
+
+.my-links-white:hover {
+	color: white;
+}
+
+.btn-my-color-white {
+	background-color: white;
+	color: #BB2D04; /*dark red*/
+	outline-color: #BB2D04; /*dark red*/
+	margin-left: 4px;
+	margin-right: 4px; 
+}
+.btn-my-color-white:hover {
+	background-color: #BB2D04; /*dark red*/
+	color: white; 
+}
+.my-p {
+	font-family: "Ubuntu";
+	margin: 15px;
+	font-size: 1.2rem;
+}
+.my-footer {
+  	background-image: url('img/kum_4.jpg');
+  	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
+}
+.row-bg {
+	background-color: #eddbdbb3; /* white stip */
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.footer-text {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+.my-footer-links {
+	color: #3D5518; /*olive green*/
+	font-family: "Ubuntu";
+}
+.my-footer-links:hover {
+	color: #3D5518; /*olive green*/
+    text-decoration: underline;
+}
+.fab {
+	color: #3D5518; /*dark olive*/
+	text-align: center;
+	font-size: 15px;
+}
+.fab:hover {
+	color: #3D5518; /*dark olive*/ 
+	text-align: center;
+	font-size: 15px;
+	text-decoration: underline;
+}
