@@ -103,6 +103,11 @@ html body {
 	background-color: white;
 	color: #BB2D04; /*dark red*/
 }
+.card-columns {
+  @media and (min-width: 768px) {
+    column-count: 2;
+  }
+}
 .colored-card {
 	background-color: #3D5518; /*olive green*/
 	color: white;
@@ -143,7 +148,7 @@ html body {
   padding-top: 15px;
 }
 
-.my-footer {
+#footer {
   background-color: #3D5518; /*olive green*/
   background-size: cover;
   background-position: center;
@@ -172,7 +177,7 @@ html body {
 }
 
 .footer-links-title {
-  color: white;
+  color: #EAAB34; /*yellow*/
   font-family: "Ubuntu";
   font-weight: bold;
   text-transform: uppercase;
