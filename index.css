@@ -20,16 +20,19 @@ html body {
   height: 100%;
   width: 100%;
 }
+
 .row.justify-content-center.align-items-center {
   height: 100%;
   min-height: 100%;
 }
+
 #main-page {
 	background-image: url('img/kum_2.jpg');
-  	background-size: cover;
-  	background-position: center;
-  	background-repeat: no-repeat;
-  	height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
 }
 .navbar {
 	background-color: #EAAB3499; /* translucent yellow */
@@ -43,10 +46,10 @@ html body {
 .nav-link:hover {
   color: #3D5518; /*dark olive*/
 }
-.my-links {
+.red-links {
 	color: #BB2D04; /*dark red*/
 }
-.my-links:hover {
+.red-links:hover {
   color: #3D5518; /*dark olive*/
 }
 .fas {
@@ -55,17 +58,22 @@ html body {
 .col-sm-12 {
 	background-color: #eddbdbb3; /* white stip */
 }
+
+.main-page-div {
+  margin-right: 0 !important;
+}
+
 .textbox-one {
 	padding-right: 2rem;
 	padding-left: 2rem;
 	padding-top: 0.5rem;
 }
-.my-h1 {
+.main-title {
 	font-family: Signika;
 	color: #BB2D04; /*dark red*/
 	font-size: 4rem;
 }
-.my-h4 {
+.main-subtitle {
 	font-size: 1.8rem;
 	color: #3D5518; /*dark green*/
 	font-family: "Ubuntu";
@@ -79,12 +87,46 @@ html body {
 #page-divider {
 	background-color: #EAAB34; /* golden yellow */
 }
-#content-boxes {
-	padding-right: 5rem;
-	padding-left: 5rem;
-	padding-top: 2rem;
+
+@media (min-width: 20em) {
+    .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
 }
-.my-h2 {
+
+@media (min-width: 48em) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (min-width: 62em) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (min-width: 75em) {
+    .card-columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
+
+#content-boxes {
+	padding-right: 4rem;
+	padding-left: 4rem;
+	padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.page-divider-title {
 	color: #3D5518; /*olive green*/
 	text-align: center;
 	padding-top: 3%;
@@ -92,14 +134,15 @@ html body {
 	padding-bottom:3%;
 	font-size: 4rem;
 }
-.btn-my-color {
+.btn-red {
 	background-color: #BB2D04; /*dark red*/
 	color: white;
 	outline-color: #BB2D04; /*dark red*/
 	margin-left: 4px;
 	margin-right: 4px;
+  margin-bottom: 6px;
 }
-.btn-my-color:hover {
+.btn-red:hover {
 	background-color: white;
 	color: #BB2D04; /*dark red*/
 }
@@ -112,24 +155,23 @@ html body {
 	background-color: #3D5518; /*olive green*/
 	color: white;
 }
-.my-links-white {
+.white-links {
 	color: white;
 	font-family: "Ubuntu";
 }
 
-.my-links-white:hover {
+.white-links:hover {
 	color: white;
 }
 
-.btn-my-color-white {
+.btn-white {
 	background-color: white;
 	color: #BB2D04; /*dark red*/
 	outline-color: #EAAB34; /*yellow*/
 	margin-left: 4px;
 	margin-right: 4px;
 }
-.btn-my-color-white:hover {
-	background-color: #EAAB34; /*yellow*/
+.btn-white:hover {
 	color: #3D5518;/*dark green*/
 }
 .my-p {
@@ -146,22 +188,15 @@ html body {
   margin-left: auto;
   margin-right: auto;
   padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-#footer {
-  background-color: #3D5518; /*olive green*/
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#mailingList {
-  padding-top: 15px;
-}
-
-#mailingListText {
-  text-align: center;
-  color: white;
+#social-media-strip {
+  background-color: #EAAB34; /*yellow*/
+  height:100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #sm-box {
@@ -173,7 +208,26 @@ html body {
 }
 
 .sm-icons:hover {
-  color: #EAAB34; /*yellow*/
+  color: #3D5518; /*green*/;
+  text-decoration: none;
+}
+
+#footer {
+  background-color: #3D5518; /*olive green*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+}
+
+#mailingList {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#mailingListText {
+  text-align: center;
+  color: white;
 }
 
 .footer-links-title {
@@ -181,6 +235,8 @@ html body {
   font-family: "Ubuntu";
   font-weight: bold;
   text-transform: uppercase;
+  min-height: 72px;
+  margin-bottom: 5px !important;
 }
 
 .footer-links {
@@ -190,5 +246,56 @@ html body {
 .footer-links:hover {
   color: #EAAB34; /*yellow*/
   text-decoration: none;
+}
 
+.footer-copyright {
+  font-size: 14px;
+  color: #3D5518; /*olive green*/
+  text-decoration: none;
+  background-color: #EAAB34; /*yellow*/
+  padding-top: 15px;
+}
+
+#copyright-images-container {
+  background-color: #3D5518; /*olive green*/
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none;
+}
+
+#copyright-images-container .card {
+  margin-top: 15px;
+}
+#copyright-images-container .card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.card-body-images {
+  height: 75px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.copyrighted-images {
+  color: #BB2D04; /*dark red*/
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.copyrighted-images:hover {
+  color: #3D5518; /*olive green*/
+  text-decoration: none !important;
+}
+
+.copyrighted-images-text {
+  padding: 15px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.copyrighted-images-text:hover {
+  text-decoration: none !important;
 }
