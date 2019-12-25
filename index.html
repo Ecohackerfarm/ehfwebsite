@@ -27,7 +27,7 @@
 </script>
 
 <script>
-function myFunction() {
+function toggleCopyRightImages() {
   var x = document.getElementById("copyright-images-container");
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -42,7 +42,7 @@ function myFunction() {
   <section id="main-page">
     <nav class="navbar navbar-expand-lg fixed-top">
       <a class="navbar-brand" href="#main-page">
-        <img src="img/ehf_logo_icon.png">
+        <img src="img/ehf_logo_icon.png" alt="Eco Hacker Farm Logo">
       </a>
       <button
       class="navbar-toggler navbar-toggler-right"
@@ -74,9 +74,9 @@ function myFunction() {
         </h4>
       </div>
       <div class="button-container row justify-content-center">
-        <a href="#page-divider"><button class="btn btn-red">Get to know our projects</button>
+        <a href="#page-divider" aria-label="What we do ..."><button class="btn btn-red">Get to know our projects</button>
         </a>
-        <a href="https://wiki.ecohackerfarm.org/history" target="_blank">
+        <a href="https://wiki.ecohackerfarm.org/history" target="_blank"  aria-label="History">
           <button class="btn btn-red">Read more about our History</button>
         </a>
       </div>
@@ -90,7 +90,7 @@ function myFunction() {
   <div class="container-fluid">
     <div class="card-columns">
       <div class="card">
-        <img class="card-img-top img-resize" src="img/ehf_logo.png" alt="kuckucmshuele logo"/>
+        <img class="card-img-top img-resize" src="img/ehf_logo.png" alt="Kuckucksmuehle logo"/>
         <div class="card-body">
           <h5 class="card-title">Eco Hacker Farm</h5>
           <p class="card-text">Eco Hacker Farm is an umbrella organization that helps to set up and support, new and existing projects that combine hackerspaces with permaculture farms to provide a sustainable living space for people to experience a way of life that is not necessarily dependent on the system but using appropriate, open source and low cost technological solutions. By supporting community projects, people are able to bring their own ideas to the rest of the community and work together with others in order to implement them.
@@ -99,26 +99,26 @@ function myFunction() {
       </div>
       <div class="card p-3">
         <blockquote class="blockquote mb-0 card-body">
-          <a class="red-links" href="https://wiki.ecohackerfarm.org/membership" target="_blank"><p>We are an onsite and online community... becoming a member is easy.</p></a>
+          <a class="red-links" href="https://wiki.ecohackerfarm.org/membership" target="_blank" aria-label="Membership" ><p>We are an onsite and online community... becoming a member is easy.</p></a>
         </blockquote>
       </div>
       <div class="card">
-        <img class="card-img-top img-resize" src="img/kum_logo.svg" alt="kuckucmshuele logo"/>
+        <img class="card-img-top img-resize" src="img/kum_logo.svg" alt="Kuckucksmuehle logo"/>
         <div class="card-body">
           <h5 class="card-title">Kuckucksmuehle - Germany</h5>
           <p class="card-text">A historical water mill in the North East of Germany, (Branderburg Federal State). We aim to restore the mill and its outbuilding, set up a Hackerspace / Hackbase and permaculture farm. </p>
-          <a href="https://wiki.ecohackerfarm.org/kuckucksmuehle:start" target="_blank"><button class="btn btn-red">Get to know us!</button></a>
+          <a href="https://wiki.ecohackerfarm.org/kuckucksmuehle:start" target="_blank" aria-label="Kuckucksmuehle" ><button class="btn btn-red">Get to know us!</button></a>
         </div>
       </div>
       <div class="card p-3 text-right">
         <blockquote class="blockquote mb-0">
-          <a class="red-links" href="https://wiki.ecohackerfarm.org/team_meetings" target="_blank"><p>Attend our monthly meetings to get to know the project and the people involved.</p></a>
+          <a class="red-links" href="https://wiki.ecohackerfarm.org/team_meetings" target="_blank"  aria-label="Team Meetings" ><p>Attend our monthly meetings to get to know the project and the people involved.</p></a>
         </blockquote>
       </div>
       <div class="card text-center">
         <div class="card-body">
           <h4 class="card-text main-subtitle">Permaculture is a design system for creating sustainable human environments. - Bill Mollison</h4>
-          <p class="card-text"><a class="red-links" href="https://wiki.ecohackerfarm.org/permaculture" target="_blank">Learn what permaculture means to us</a></p>
+          <p class="card-text"><a class="red-links" href="https://wiki.ecohackerfarm.org/permaculture" target="_blank"  aria-label="Permaculture" >Learn what permaculture means to us</a></p>
         </div>
       </div>
       <div class="card">
@@ -126,26 +126,26 @@ function myFunction() {
         <div class="card-body">
           <h5 class="card-title">powerplant</h5>
           <p class="card-text">An open source web app that allows anyone planning a garden to utilize companion planting and other permaculture practices. It provides intelligent suggestions to help the gardener by advising the best planting schedules and combinations of crops to maximize the garden's yield.</p>
-          <a href="https://wiki.ecohackerfarm.org/powerplant:start" target="_blank">
+          <a href="https://wiki.ecohackerfarm.org/powerplant:start" target="_blank"  aria-label="Powerplant Wiki Page" >
             <button class="btn btn-red">Tell me more!</button></a>
           </div>
         </div>
         <div class="card text-right p-3">
           <blockquote class="blockquote mb-0">
-            <a class="red-links" href="mailto:community-subscribe[@]ecohackerfarm.org">
+            <a class="red-links" href="mailto:community-subscribe[@]ecohackerfarm.org"  aria-label="Mailinglist" >
               <p>Join our mailing list for the latest news & updates</p>
             </a>
           </blockquote>
         </div>
         <div class="card align-items-center">
-          <a class="twitter-timeline" data-width="500" data-height="400" data-link-color="#BB2D04" href="https://twitter.com/EcoHackerFarm?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a class="twitter-timeline" data-width="100%" data-height="400" data-link-color="#BB2D04" href="https://twitter.com/EcoHackerFarm?ref_src=twsrc%5Etfw"  aria-label="Twitter" ></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
         <div class="card">
-          <a href="https://blog.ecohackerfarm.org/some-well-earned-rest/" target="_blank"><img class="card-img" src="img/kum_3.jpg" alt="Luna the cat"></a>
+          <a href="https://blog.ecohackerfarm.org/some-well-earned-rest/" target="_blank"  aria-label="Some well earned rest" ><img class="card-img" src="img/kum_3.jpg" alt="Luna the cat"></a>
         </div>
         <div class="card">
           <div class="card-body">
-            <a class="red-links" href="https://blog.ecohackerfarm.org/" target="_blank"><h5 class="card-title">Read our Blog!</h5></a>
+            <a class="red-links" href="https://blog.ecohackerfarm.org/" target="_blank" aria-label="Blog" ><h5 class="card-title">Read our Blog!</h5></a>
             <p class="card-text">Apart from the heavy documentation in the wiki we also have space for unwinding and presenting our experience of the project in an informal way.</p>
           </div>
         </div>
@@ -154,14 +154,14 @@ function myFunction() {
           <div class="card-body">
             <h5 class="card-title">Start your own Eco Hacker Farm project!</h5>
             <p class="card-text">We are happy to expand our projects across the world. Read more about what this involved on our wiki. </p>
-            <a href="https://wiki.ecohackerfarm.org/newprojects" target="_blank"><button class="btn btn-red">Get started</button></a>
+            <a href="https://wiki.ecohackerfarm.org/newprojects" target="_blank"  aria-label="New Projects" ><button class="btn btn-red">Get started</button></a>
           </div>
         </div>
         <div class="card colored-card">
           <div class="card-body">
-            <a class="white-links" href="https://wiki.ecohackerfarm.org/ecohackerfarm:donations" target="_blank"><h5 class="card-title">Support us!</h5></a>
-            <p class="card-text">We currently receive no financial support from governemental bodies, foundations, or other NGOs.</p>
-            <a href="https://wiki.ecohackerfarm.org/ecohackerfarm:donations" target="_blank"><button class="btn btn-white">Take my money</button></a>
+            <a class="white-links" href="https://wiki.ecohackerfarm.org/ecohackerfarm:donations"  aria-label="Donations" target="_blank"><h5 class="card-title">Support us!</h5></a>
+            <p class="card-text">We currently receive no financial support from governmental bodies, foundations, or other NGOs.</p>
+            <a href="https://wiki.ecohackerfarm.org/ecohackerfarm:donations" target="_blank"  aria-label="Donations" ><button class="btn btn-white">Take my money</button></a>
           </div>
         </div>
       </div>
@@ -170,23 +170,23 @@ function myFunction() {
   <div id="social-media-strip">
     <div id="sm-box">
       <!-- Facebook -->
-      <a class="fb-ic" href="https://www.facebook.com/EcoHackerFarm/" target="_blank">
+      <a class="fb-ic" href="https://www.facebook.com/EcoHackerFarm/" target="_blank" aria-label="Facebook" >
         <i class="sm-icons fab fa-facebook fa-lg mr-md-5 mr-3 fa-2x"> </i>
       </a>
       <!-- Twitter -->
-      <a class="tw-ic" href="https://twitter.com/EcoHackerFarm" target="_blank">
+      <a class="tw-ic" href="https://twitter.com/EcoHackerFarm" target="_blank"  aria-label="Twitter" >
         <i class="sm-icons fab fa-twitter fa-lg mr-md-5 mr-3 fa-2x"> </i>
       </a>
       <!-- github-->
-      <a class="github-ic" href="https://github.com/Ecohackerfarm" target="_blank">
+      <a class="github-ic" href="https://github.com/Ecohackerfarm" target="_blank"  aria-label="Github" >
         <i class="sm-icons fab fa-github fa-lg mr-md-5 mr-3 fa-2x"> </i>
       </a>
       <!--Instagram-->
-      <a class="ins-ic" href="https://www.instagram.com/ecohackerfarm/" target="_blank">
+      <a class="ins-ic" href="https://www.instagram.com/ecohackerfarm/" target="_blank" aria-label="instagram" >
         <i class="sm-icons fab fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
       </a>
       <!--youtube-->
-      <a class="yt-ic" href="https://www.youtube.com/channel/UCblUDIwkPuzaBDueVxRB1ZQ" target="_blank">
+      <a class="yt-ic" href="https://www.youtube.com/channel/UCblUDIwkPuzaBDueVxRB1ZQ" target="_blank"  aria-label="Youtube" >
         <i class="sm-icons fab fa-youtube fa-lg fa-2x"> </i>
       </a>
     </div>
@@ -205,7 +205,7 @@ function myFunction() {
           <div class="col-md-8 mb-1">
             <h3 id="mailingListText">Sign up to our mailing list</h3>
             <div class="input-group-append d-flex justify-content-center">
-              <a href="mailto:community-subscribe@ecohackerfarm.org?Subject=Subscribe%20me%20to%20the%20mailing%20list"> <button class="btn btn-sm btn-white"  type="button">Keep me posted!</button></a>
+              <a href="mailto:community-subscribe@ecohackerfarm.org?Subject=Subscribe%20me%20to%20the%20mailing%20list"  aria-label="Subscribe to the mailing list" > <button class="btn btn-sm btn-white"  type="button">Keep me posted!</button></a>
             </div>
           </div>
           <!--Grid column-->
@@ -224,13 +224,13 @@ function myFunction() {
               <h5 class="mt-3 mb-4 footer-links-title">Eco Hacker Farm</h5>
               <ul class="list-unstyled">
                 <li>
-                  <a href="https://wiki.ecohackerfarm.org/ideals" target="_blank" class="footer-links">Our Ideals</a>
+                  <a href="https://wiki.ecohackerfarm.org/ideals" target="_blank" class="footer-links"  aria-label="Our Ideals" >Our Ideals</a>
                 </li>
                 <li>
-                  <a href="https://wiki.ecohackerfarm.org/finance:start" target="_blank" class="footer-links">Administration & Finance</a>
+                  <a href="https://wiki.ecohackerfarm.org/finance:start" target="_blank" class="footer-links"  aria-label="Administration and Finance" >Administration & Finance</a>
                 </li>
                 <li>
-                  <a href="https://wiki.ecohackerfarm.org/membership" target="_blank" class="footer-links">Membership</a>
+                  <a href="https://wiki.ecohackerfarm.org/membership" target="_blank" class="footer-links"  aria-label="Membership" >Membership</a>
                 </li>
               </ul>
             </div>
@@ -240,16 +240,16 @@ function myFunction() {
               <h5 class="mt-3 mb-4 footer-links-title">Legal</h5>
               <ul class="list-unstyled">
                 <li>
-                  <a href="https://wiki.ecohackerfarm.org/impressum" target="_blank" class="footer-links">Impressum</a>
+                  <a href="https://wiki.ecohackerfarm.org/impressum" target="_blank" class="footer-links"  aria-label="Impressum" >Impressum</a>
                 </li>
                 <li>
-                  <a href="https://wiki.ecohackerfarm.org/privacy-policy" target="_blank" class="footer-links">Privacy Policy</a>
+                  <a href="https://wiki.ecohackerfarm.org/privacy-policy" target="_blank" class="footer-links"  aria-label="Privacy Policy" >Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="https://wiki.ecohackerfarm.org/accessibility-policy" target="_blank" class="footer-links">Accessibility Policy</a>
+                  <a href="https://wiki.ecohackerfarm.org/accessibility-policy" target="_blank" class="footer-links"  aria-label="Accessibility Policy" >Accessibility Policy</a>
                 </li>
                 <li>
-                  <a href="#copyrighted-images-container" class="footer-links" onclick="myFunction()">Copyrighted Images</a>
+                  <a href="#copyrighted-images-container" class="footer-links" onclick="toggleCopyRightImages()">Copyrighted Images</a>
                 </li>
               </ul>
             </div>

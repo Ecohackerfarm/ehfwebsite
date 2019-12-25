@@ -125,6 +125,16 @@ html body {
 	padding-top: 2rem;
   padding-bottom: 2rem;
 }
+
+@media (max-width: 48em) {
+  #content-boxes {
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+
 .page-divider-title {
 	color: #3D5518; /*olive green*/
 	text-align: center;
@@ -132,6 +142,22 @@ html body {
 	font-family: Cuprum;
 	padding-bottom:3%;
 	font-size: 4rem;
+}
+
+@media (max-width: 48em) {
+  .page-divider-title {
+    padding: 3%;
+  }
+  .btn {
+    width: 100%;
+  }
+  .button-container > a {
+    width : 100%;
+  }
+  .input-group-append > a{
+    width: 100%;
+    padding: 0 1rem;
+  }
 }
 .btn-red {
 	background-color: #BB2D04; /*dark red*/
